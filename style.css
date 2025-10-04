@@ -235,21 +235,18 @@ svg {
 }
 
 .project-sidebar {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
   padding: 20px;
-  row-gap: 16px;
 }
 
 .announcements--title {
-  font-size: 1.125rem;
+  margin-bottom: 20px;
   color: var(--heading-color);
 }
 
 .announcements {
   display: grid;
-  padding: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
   background-color: var(--header-bgc);
   border-radius: 8px;
   box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
@@ -282,21 +279,22 @@ svg {
 }
 
 .trending--title {
-  font-size: 1.125rem;
+  margin-bottom: 20px;
   color: var(--heading-color);
 }
 
 .trending--description {
   display: grid;
-  padding: 16px;
+  padding: 10px;
   background-color: var(--header-bgc);
   border-radius: 8px;
   box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
     rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
   row-gap: 10px;
+  border: #00b0ff solid;
 }
 
 .trending--card {
   display: grid;
-  /* grid-template-columns: repeat(2, 1fr); */
+  grid-template-columns: repeat(2, 1fr);
 }
