@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
       rel="stylesheet"
@@ -11,13 +17,14 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section class="dashboard">
+    <section class="dashboard-container">
       <aside class="dashboard--sidebar">
         <nav class="main--nav">
           <div class="main-nav-header">
-            <span class="logo"><i class="bxr bx-dashboard-alt"></i> </span>
+            <span class="logo"><i class="bxr bx-dashboard-alt"></i></span>
             <h1 class="main--nav-logo">Dashboard</h1>
           </div>
+
           <ul class="main--nav-list">
             <li class="main--nav-item">
               <a href="" class="main--nav-link"
@@ -87,150 +94,248 @@
           </ul>
         </nav>
       </aside>
+
       <main class="dashboard--main-content">
         <header class="header">
           <section class="header--search">
-            <span class="search--icon"></span>
-            <div class="search--bar"></div>
-          </section>
-          <div class="header--user-profile">
-            <span class="header--user-icon"></span>
-            <img
-              src=""
-              alt="Avatar"
-              class="header--avatar header--avatar-small"
-            />
-            <span class="header--username">Morgan Oakley</span>
-          </div>
-          <div class="header--welcome">
-            <img src="" alt="Avatar" class="header--avatar" />
-            <div class="header--user-info">
-              <span class="header--greeting">Hi there</span>
-              <h2 class="header--username">Morgar Oakley (@morgan)</h2>
+            <div class="search">
+              <span class="search--icon">
+                <i class="bxr bx-search"></i>
+              </span>
+              <div class="search--bar"></div>
             </div>
-          </div>
 
-          <div class="header--actions">
-            <button class="btn btn--primary">New</button
-            ><button class="btn btn--secondary">Upload</button
-            ><button class="btn btn--secondary">Share</button>
-          </div>
+            <div class="header--user-profile">
+              <span class="header--user-icon">
+                <i class="bxr bx-bell-ring"></i>
+              </span>
+              <img
+                src="./assets/account.svg"
+                alt="Avatar"
+                class="header--avatar header--avatar-small"
+              />
+              <span class="header--username">Morgan Oakley</span>
+            </div>
+          </section>
+
+          <section class="header--welcome">
+            <div class="welcome">
+              <div class="avatar-header">
+                <img
+                  src="./assets/account.svg"
+                  alt="Avatar"
+                  class="header--avatar"
+                />
+              </div>
+
+              <div class="header--user-info">
+                <span class="header--greeting">Hi there,</span>
+                <h2 class="header--username">Morgar Oakley (@morgan)</h2>
+              </div>
+            </div>
+            <div class="header--actions">
+              <button class="btn btn--primary">New</button
+              ><button class="btn btn--secondary">Upload</button
+              ><button class="btn btn--secondary">Share</button>
+            </div>
+          </section>
         </header>
 
         <section class="projects">
-          <h3 class="projects--title">Your Projects</h3>
           <div class="proyects--grid">
-            <article class="project-card">
-              <h4 class="project--card-title">Super Cool Project</h4>
-              <p class="project--card-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloremque inventore rem magni excepturi eligendi nobis!
-              </p>
-              <div class="procject--card-icon">
-                <span class="project--card-icon"></span
-                ><span class="project--card-icon"></span
-                ><span class="project--card-icon"></span>
-              </div>
-            </article>
-            <article class="project-card">
-              <h4 class="project--card-title"></h4>
-              <p class="project--card-description"></p>
-              <div class="procject--card-icon">
-                <span class="project--card-icon"></span
-                ><span class="project--card-icon"></span
-                ><span class="project--card-icon"></span>
-              </div>
-            </article>
-            <article class="project-card">
-              <h4 class="project--card-title"></h4>
-              <p class="project--card-description"></p>
-              <div class="procject--card-icon">
-                <span class="project--card-icon"></span
-                ><span class="project--card-icon"></span
-                ><span class="project--card-icon"></span>
-              </div>
-            </article>
-            <article class="project-card">
-              <h4 class="project--card-title"></h4>
-              <p class="project--card-description"></p>
-              <div class="procject--card-icon">
-                <span class="project--card-icon"></span
-                ><span class="project--card-icon"></span
-                ><span class="project--card-icon"></span>
-              </div>
-            </article>
+            <h3 class="projects--title">Your Projects</h3>
+            <div class="projects--cards">
+              <article class="project-card">
+                <h4 class="project--card-title">Super Cool Project</h4>
+                <p class="project--card-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloremque inventore rem magni excepturi eligendi nobis!
+                </p>
+                <div class="procject--card-icon">
+                  <img
+                    src="./assets/star-plus-outline.svg"
+                    alt="star-plus-outline"
+                  />
+                  <img
+                    src="./assets/eye-plus-outline.svg"
+                    alt="eye-plus-outline"
+                  />
+                  <img src="./assets/source-fork.svg" alt="source-fork" />
+                </div>
+              </article>
+              <article class="project-card">
+                <h4 class="project--card-title">Less Cool Proyect</h4>
+                <p class="project--card-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+                  praesentium quidem recusandae tempore animi molestiae
+                  blanditiis a, labore doloremque. Distinctio a facilis odio
+                  laboriosam, sit itaque?
+                </p>
+                <div class="procject--card-icon">
+                  <img
+                    src="./assets/star-plus-outline.svg"
+                    alt="star-plus-outline"
+                  />
+                  <img
+                    src="./assets/eye-plus-outline.svg"
+                    alt="eye-plus-outline"
+                  />
+                  <img src="./assets/source-fork.svg" alt="source-fork" />
+                </div>
+              </article>
+              <article class="project-card">
+                <h4 class="project--card-title">Impossible App</h4>
+                <p class="project--card-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Expedita eum obcaecati dolorum id beatae?
+                </p>
+                <div class="procject--card-icon">
+                  <img
+                    src="./assets/star-plus-outline.svg"
+                    alt="star-plus-outline"
+                  />
+                  <img
+                    src="./assets/eye-plus-outline.svg"
+                    alt="eye-plus-outline"
+                  />
+                  <img src="./assets/source-fork.svg" alt="source-fork" />
+                </div>
+              </article>
+              <article class="project-card">
+                <h4 class="project--card-title">Easy Peasy App</h4>
+                <p class="project--card-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                  eveniet ab iste ad fugit voluptate quae dicta sequi esse.
+                  Cupiditate, tempore nostrum.
+                </p>
+                <div class="procject--card-icon">
+                  <img
+                    src="./assets/star-plus-outline.svg"
+                    alt="star-plus-outline"
+                  />
+                  <img
+                    src="./assets/eye-plus-outline.svg"
+                    alt="eye-plus-outline"
+                  />
+                  <img src="./assets/source-fork.svg" alt="source-fork" />
+                </div>
+              </article>
+
+              <article class="project-card">
+                <h4 class="project--card-title">Ad Blocker</h4>
+                <p class="project--card-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                  eveniet ab iste ad fugit voluptate quae dicta sequi esse.
+                  Cupiditate, tempore nostrum.
+                </p>
+                <div class="procject--card-icon">
+                  <img
+                    src="./assets/star-plus-outline.svg"
+                    alt="star-plus-outline"
+                  />
+                  <img
+                    src="./assets/eye-plus-outline.svg"
+                    alt="eye-plus-outline"
+                  />
+                  <img src="./assets/source-fork.svg" alt="source-fork" />
+                </div>
+              </article>
+
+              <article class="project-card">
+                <h4 class="project--card-title">Money Maker</h4>
+                <p class="project--card-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                  eveniet ab iste ad fugit voluptate quae dicta sequi esse.
+                  Cupiditate, tempore nostrum.
+                </p>
+                <div class="procject--card-icon">
+                  <img
+                    src="./assets/star-plus-outline.svg"
+                    alt="star-plus-outline"
+                  />
+                  <img
+                    src="./assets/eye-plus-outline.svg"
+                    alt="eye-plus-outline"
+                  />
+                  <img src="./assets/source-fork.svg" alt="source-fork" />
+                </div>
+              </article>
+            </div>
           </div>
 
-          <div class="sidebar--right">
+          <aside class="project-sidebar">
+            <h3 class="announcements--title">Announcements</h3>
+
             <section class="announcements">
-              <h3 class="announcements--title">Announcements</h3>
               <div class="announcements--description">
-                <h5>Site Maintenance</h5>
-                <p>
+                <h5 class="title">Site Maintenance</h5>
+                <p class="paragraph">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
                   quisquam delectus dicta modi.
                 </p>
               </div>
               <div class="announcements--description">
-                <h5>Community Share Day</h5>
-                <p>
+                <h5 class="title">Community Share Day</h5>
+                <p class="paragraph">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
                   veritatis cumque eveniet culpa.
                 </p>
               </div>
               <div class="announcements--description">
-                <h5>Update Privacy Policy</h5>
-                <p>
+                <h5 class="title">Update Privacy Policy</h5>
+                <p class="paragraph">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
                   veniam voluptates culpa dolorum.
                 </p>
               </div>
             </section>
 
+            <h3 class="trending--title">Trending</h3>
+
             <section class="trending">
-              <h3 class="trending--title">Trending</h3>
-
               <div class="trending--description">
-                <div class="trending--avatar">
-                  <img src="" alt="Avatar" class="avatar" />
+                <div class="trending--card">
+                  <div class="trending--avatar">
+                    <img src="" alt="Avatar" class="avatar" />
+                  </div>
+                  <div class="trending--username">
+                    <h5>@tegan</h5>
+                    <p>Wold Peace Builder</p>
+                  </div>
                 </div>
-                <div class="trending--username">
-                  <h5>@tegan</h5>
-                  <p>Wold Peace Builder</p>
-                </div>
-              </div>
 
-              <div class="trending--description">
-                <div class="trending--avatar">
-                  <img src="" alt="Avatar" class="avatar" />
+                <div class="trending--card">
+                  <div class="trending--avatar">
+                    <img src="" alt="Avatar" class="avatar" />
+                  </div>
+                  <div class="trending--username">
+                    <h5>@morgan</h5>
+                    <p>Super Cool Project</p>
+                  </div>
                 </div>
-                <div class="trending--username">
-                  <h5>@morgan</h5>
-                  <p>Super Cool Project</p>
-                </div>
-              </div>
 
-              <div class="trending--description">
-                <div class="trending--avatar">
-                  <img src="" alt="Avatar" class="avatar" />
+                <div class="trending--card">
+                  <div class="trending--avatar">
+                    <img src="" alt="Avatar" class="avatar" />
+                  </div>
+                  <div class="trending--username">
+                    <h5>@kendall</h5>
+                    <p>Life Changing App</p>
+                  </div>
                 </div>
-                <div class="trending--username">
-                  <h5>@kendall</h5>
-                  <p>Life Changing App</p>
-                </div>
-              </div>
 
-              <div class="trending--description">
-                <div class="trending--avatar">
-                  <img src="" alt="Avatar" class="avatar" />
-                </div>
-                <div class="trending--username">
-                  <h5>@alex</h5>
-                  <p>No Traffic Maker</p>
+                <div class="trending--card">
+                  <div class="trending--avatar">
+                    <img src="" alt="Avatar" class="avatar" />
+                  </div>
+                  <div class="trending--username">
+                    <h5>@alex</h5>
+                    <p>No Traffic Maker</p>
+                  </div>
                 </div>
               </div>
             </section>
-          </div>
+          </aside>
         </section>
       </main>
     </section>
