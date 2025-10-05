@@ -1,4 +1,4 @@
-[Dashboard Gif](./assets/dashboard-gif)
+[Dashboard screenshot](./assets/Captura%20de%20pantalla.png)
 
 # Project Dashboard
 
@@ -20,7 +20,7 @@ This Project is built with frontend technologies:
 ## Live Demo
 
 You can view a live version of the project here:
-[**Live Demo Link**]()
+[**Live Demo Link**]( https://giovannihurtado.github.io/admin-dashboard-)
 ---
 
 
